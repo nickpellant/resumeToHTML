@@ -1,5 +1,5 @@
 {
-  "name": "resumeToHTML",
+  "name": "resume-to-html",
   "version": "0.0.0",
   "description": "resumeToHTML ============",
   "main": "libs/converter.js",
@@ -15,4 +15,4 @@
   "bugs": {
     "url": "https://github.com/thomasdavis/resumeToHTML/issues"
   }
-}
+}\
