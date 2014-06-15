@@ -1,10 +1,10 @@
 {
   "name": "resume-to-html",
   "version": "0.0.0",
-  "description": "resumeToHTML ============",
-  "main": "libs/converter.js",
+  "description": "resumeToHTML",
+  "main": "lib/converter.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -15,4 +15,4 @@
   "bugs": {
     "url": "https://github.com/thomasdavis/resumeToHTML/issues"
   }
-}\
+}
