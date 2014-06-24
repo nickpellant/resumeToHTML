@@ -1,6 +1,6 @@
 {
   "name": "resume-to-html",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "resumeToHTML",
   "main": "lib/converter.js",
   "scripts": {
@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "mustache": "~0.8.2",
-    "resume-schema": "0.0.1"
+    "resume-schema": "0.0.1",
+    "resume-to-markdown": "0.0.4",
+    "marked": "~0.3.2"
   }
 }
