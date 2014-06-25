@@ -1,24 +1,28 @@
 {
-  "name": "resume-to-html",
-  "version": "0.0.6",
-  "description": "resumeToHTML",
-  "main": "lib/converter.js",
-  "scripts": {
-    "test": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/thomasdavis/resumeToHTML.git"
-  },
-  "author": "",
-  "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/thomasdavis/resumeToHTML/issues"
-  },
-  "dependencies": {
-    "mustache": "~0.8.2",
-    "resume-schema": "latest",
-    "resume-to-markdown": "latest",
-    "marked": "~0.3.2"
-  }
+    "name": "resume-to-html",
+    "version": "0.0.6",
+    "description": "resumeToHTML",
+    "main": "lib/converter.js",
+    "scripts": {
+        "test": "node ./test/index.js | tap-spec"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/thomasdavis/resumeToHTML.git"
+    },
+    "author": "",
+    "license": "BSD-2-Clause",
+    "bugs": {
+        "url": "https://github.com/thomasdavis/resumeToHTML/issues"
+    },
+    "dependencies": {
+        "mustache": "~0.8.2",
+        "resume-schema": "latest",
+        "resume-to-markdown": "latest",
+        "marked": "~0.3.2"
+    },
+    "devDependencies": {
+        "tap-spec": "^0.2.0",
+        "tape": "^2.13.3"
+    }
 }
