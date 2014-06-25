@@ -1,5 +1,5 @@
 var test = require('tape');
-var converter = require('../lib/converter');
+var resumeToHTML = require('../lib/converter');
 
 var resumeJson = {
     "name": "test",
@@ -7,7 +7,7 @@ var resumeJson = {
 }
 
 test('Test resumeToText on resume.json.', function(t) {
-    resumeToText(resumeJson, function(report, err) {
+    resumeToHTML(resumeJson, function(report, err) {
         t.plan(1);
         t.equal(err, null, 'no errors');
     });
