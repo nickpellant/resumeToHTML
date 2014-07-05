@@ -4,7 +4,6 @@ var path = require('path');
 
 var resumeObject = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'resume.json'), 'utf8'));
 
-resumeToHTML(resumeObject, {theme: 'crisp'}, function (html, errs) {
-	console.log(errs);
+resumeToHTML(resumeObject, {theme: 'modern'}, function (html, errs) {
 	fs.writeFileSync(__dirname + '/resume.html', html);
 });
