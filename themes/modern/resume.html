@@ -1,32 +1,67 @@
 <div class="container">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8 col-md-offset-2">
 <h1>{{bio.firstName}} {{bio.lastName}}</h1>
-<h2>Work</h2>
-<ul>
-{{#work}}
-  <li>
-    <h3>{{position}}, {{company}}</h3>
-    <p>{{startDate}} - {{endDate}}</p>
+<h2>{{bio.label}}</h2>
+
+  <hr style="color: #ccc; height: 4px;" />
+  <section class="row">
+      <header class="col-md-3">
+      <h3>About</h3>
+    </header>
+    <div class="col-md-9">
+      <p>{{bio.summary}}</p>
+    </div>
+  </section>
+
+  <section class="row">
+      <header class="col-md-3">
+      <h3>Work Experience</h3>
+    </header>
+    <div class="col-md-9">
+      <div class="skills">
+      {{#work}}
+    <h3>{{company}}</h3>
+    <strong>{{position}}</strong>
+    <p>{{startDateYear}} - {{endDateYear}}</p>
     <p>{{summary}}</p>
     <ul>
       {{#highlights}}
         <li>{{.}}</li>
       {{/highlights}}
     </ul>
-  </li>
+    <hr />
 {{/work}}
-</ul>
+      </div>
+    </div>
+  </section>
+<section class="row">
+    <header class="col-md-3">
+      <h3>Skills</h3>
+    </header>
+    <div class="col-md-9">
+      <div class="row-fluid skills">
+        {{#skills}}
+        <ul class="col-md-6">
 
+          <li><h4>{{name}}</h4><ul>
+          {{#keywords}}
+            <li>{{.}}</li>
+          {{/keywords}}
+        </ul></li></ul>
+        {{/skills}}
+      </div>
+    </div>
+  </section>
 <h2>References</h2>
 
 {{#references}}
-  <blockquote>{{reference}} - <strong>{{name}}</strong></blockquote>
+  <p>{{reference}} - <strong>{{name}}</strong></p>
 {{/references}}
 </div>
 <div class="col-md-3">
         <br />
-
+<!--
           <h3>Social Networks</h3>
           {{#bio.profiles.twitter}}
           <a href="http://twitter.com/{{.}}" style="width: 100%;" class="btn btn-info">Follow @{{.}}</a>
@@ -36,7 +71,7 @@
 
           <a href="http://github.com/{{.}}" style="width: 100%;" class="btn btn-default">Github @{{.}}</a>
           {{/bio.profiles.github}}
-         
+         -->
           <!--
           <div class="btn-group" style="width: 100%;">
                     <a href="/thomasdavis.json" class="btn btn-default">Export</a>

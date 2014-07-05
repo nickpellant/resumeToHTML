@@ -1,15 +1,15 @@
 {
   "bio": {
-      "firstName": "Thomas",
+      "firstName": "Thomas", 
       "lastName": "Davis",
-      "bio": "Hey guys, I’m a full stack web developer who loves working with open source technology.",
+      "summary": "Hey guys, I’m a full stack web developer who loves working with open source technology.",
       "location": {
           "city": "Brisbane",
           "countryCode": "AU"
       },
       "profiles": {
-        "twitter": "neutralthoughts",
-        "github": "thomasdavis"
+          "twitter": "neutralthoughts",
+          "github": "thomasdavis"
       }
     },
   "work": [{
@@ -90,7 +90,12 @@
       "twitter": "neutralthoughts"
   },
   "skills": [{
-    "name": "Web Development"
+    "name": "Frontend",
+    "keywords": ["html", "css", "javascript", "backbone"]
+  },
+  {
+    "name": "Backend",
+    "keywords": ["Node", "Ruby", "Python"]
   }],
   "hobbies": [],
   "references": [{
