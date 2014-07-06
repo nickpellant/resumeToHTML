@@ -18,6 +18,12 @@
         {{#bio.email.personal}}
         <strong>Email:</strong> {{bio.email.personal}}<br />
         {{/bio.email.personal}}
+        {{#bio.profiles.twitter}}
+        <strong>Twitter:</strong> <a href="https://twitter.com/{{bio.profiles.twitter}}">@{{bio.profiles.twitter}}</a><br />
+        {{/bio.profiles.twitter}}
+        {{#bio.profiles.github}}
+        <strong>Github:</strong> <a href="https://github.com/{{bio.profiles.github}}">{{bio.profiles.github}}</a><br />
+        {{/bio.profiles.github}}
         </div>
       </section>
       {{#work.length}}
