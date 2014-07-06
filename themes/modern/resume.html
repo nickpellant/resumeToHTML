@@ -2,15 +2,23 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <h1>{{bio.firstName}} {{bio.lastName}}</h1>
-      <h2>{{bio.label}}</h2>
+
+      <h2>{{bio.location.city}}</h2>
 
       <hr style="color: #ccc; height: 4px;" />
       <section class="row">
         <header class="col-md-3">
           <h3>About</h3>
         </header>
+        <div class="col-md-9">
         <p>{{bio.summary}}</p>
-
+        {{#bio.phone.personal}}
+        <strong>Phone:</strong> {{bio.phone.personal}} <br />
+        {{/bio.phone.personal}}
+        {{#bio.email.personal}}
+        <strong>Email:</strong> {{bio.email.personal}}<br />
+        {{/bio.email.personal}}
+        </div>
       </section>
       {{#work.length}}
       <section class="row">
