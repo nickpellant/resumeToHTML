@@ -24,8 +24,11 @@
         {{#bio.profiles.github}}
         <strong>Github:</strong> <a href="https://github.com/{{bio.profiles.github}}">{{bio.profiles.github}}</a><br />
         {{/bio.profiles.github}}
+        {{#bio.profiles.stackoverflow}}
+        <strong>StackOverflow:</strong> <a href="http://stackoverflow.com/users/{{bio.profiles.stackoverflow}}">{{bio.firstName}} {{bio.lastName}}</a><br />
+        {{/bio.profiles.stackoverflow}}
         {{#bio.profiles.linkedin}}
-        <strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/{{bio.profiles.linkedin}}">{{bio.profiles.linkedin}}</a><br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/{{bio.profiles.linkedin}}">{{bio.profiles.linkedin}}</a><br />
         {{/bio.profiles.linkedin}}
         </div>
       </section>
